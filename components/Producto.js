@@ -15,11 +15,14 @@ const Producto = ({producto}) => {
               <div
                 className="w-40 h-40 -mt-8 drop-shadow-2xl"
               >
-                <img
+                <Image 
                   src={`/assets/img/${imagen}.jpg`}
                   alt={`Imagen platillo ${nombre}`}
+                  width={0}
+                  height={0}
                   className="rounded-full w-20 h-20"
-                />
+              />
+
               </div>
               <div
                 className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:shadow-md -mt-8"

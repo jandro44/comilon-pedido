@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import axios from "axios"
 import { Toaster, toast } from 'sonner'
 import { formatearDinero } from "@/helpers"
@@ -26,7 +26,13 @@ export default function Ordenes({orden}) {
 
             {pedido.map(platillo => (
                 <div key={platillo.id} className="flex flex-col rounded-lg bg-white sm:flex-row">
-                    <img className="m-2 h-20 w-20 rounded-md border object-cover object-center" src={`/assets/img/${platillo.imagen}.jpg`} alt="" />
+                    <Image 
+                        src={`/assets/img/${platillo.imagen}.jpg`}
+                        alt={`Imagen platillo ${platillo.nombre}`}
+                        width={0}
+                        height={0}
+                        className="m-2 h-20 w-20 rounded-md border object-cover object-center"
+                    />
                     <div className="flex w-full flex-col px-4 py-4">
                         <span className="font-semibold">{platillo.nombre}</span>
                         <span className="float-right text-gray-400">Cantidad: {platillo.cantidad}</span>

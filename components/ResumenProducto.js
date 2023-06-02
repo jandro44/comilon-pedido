@@ -15,10 +15,12 @@ const ResumenProducto = ({producto}) => {
         <div className="w-275 h-[200px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
             <div className="w-full flex items-center justify-between">
                 <div className="w-40 h-40 -mt-8 drop-shadow-2xl">
-                    <img
+                    <Image 
                         src={`/assets/img/${producto.imagen}.jpg`}
                         alt={`Imagen platillo ${producto.nombre}`}
                         className="rounded-full w-20 h-20"
+                        width={0}
+                        height={0}
                     />
                 </div>
                 <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:shadow-md -mt-8"
