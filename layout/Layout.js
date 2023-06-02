@@ -32,7 +32,7 @@ export default function Layout({children, pagina}) {
         <>
             <Head>
                 <title>Comilon - {pagina}</title>
-                <meta name="description" content="Kiosko Cafetería" />
+                <meta name="description" content="Restaurant Comilon" />
             </Head>
             
             <div className="w-screen h-auto flex flex-col ">
