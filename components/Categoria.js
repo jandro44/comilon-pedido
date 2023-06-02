@@ -1,4 +1,5 @@
 import useKiosko from "@/hooks/useKiosko";
+import Image from "next/image"
 
 export default function Categoria2({categoria}) {
     const { categoriaActual, handleClickCategoria } = useKiosko()
@@ -16,9 +17,11 @@ export default function Categoria2({categoria}) {
             <div
                 className="w-10 h-10 rounded-full shadow-lg bg-amber-500 group-hover:bg-white flex items-center justify-center"
             >
-                <img
-                    src={`/assets/img/icono_${icono}.svg`}
-                    alt="Imagen Icono"
+            <Image 
+                src={`/assets/img/icono_${icono}.svg`}
+                alt="Imagen Icono"
+                width={0}
+                height={0}
             />
             </div>
             <p

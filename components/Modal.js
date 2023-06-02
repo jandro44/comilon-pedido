@@ -42,10 +42,12 @@ const ModalProducto = () => {
                 <div
                     className="w-40 h-40 drop-shadow-2xl"
                 >
-                    <img
-                    src={`/assets/img/${producto.imagen}.jpg`}
-                    alt={`Imagen platillo ${producto.nombre}`}
-                    className="rounded-full w-20 h-20 mx-auto"
+                    <Image 
+                        src={`/assets/img/${producto.imagen}.jpg`}
+                        alt={`Imagen platillo ${producto.nombre}`}
+                        className="rounded-full w-20 h-20 mx-auto"
+                        width={0}
+                        height={0}
                     />
                     
                 </div>

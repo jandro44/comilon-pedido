@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 import axios from "axios"
 import { Toaster, toast } from 'sonner'
 import { formatearDinero } from "@/helpers"
