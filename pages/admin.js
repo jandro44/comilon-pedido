@@ -3,6 +3,7 @@ import axios from 'axios'
 import Ordenes from '@/components/Ordenes'
 import Head from "next/head";
 import { Toaster, toast } from 'sonner'
+import Image from "next/image"
 
 export default function Admin() {
 
@@ -36,8 +37,11 @@ export default function Admin() {
                         <p className="text-center text-lg text-red-600 font-bold uppercase mt-20 mb-5">No hay ordenes pendientes</p>
 
                         <div className="flex justify-center">
-                            <img
+                            <Image
                                 src='/assets/plato-vacio.png'
+                                alt='Plato vacio'
+                                width={0}
+                                height={0}
                             />
                         </div> 
                     </>

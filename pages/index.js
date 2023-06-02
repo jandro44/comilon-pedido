@@ -2,7 +2,7 @@ import Producto from '@/components/Producto'
 import useKiosko from '@/hooks/useKiosko'
 import Layout from '@/layout/Layout';
 
-export default function nuevo() {
+export default function Home() {
 
     const { categoriaActual } = useKiosko()
 
