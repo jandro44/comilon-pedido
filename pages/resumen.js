@@ -1,6 +1,7 @@
 import ResumenProducto from "@/components/ResumenProducto"
 import useKiosko from "@/hooks/useKiosko"
 import Layout from "@/layout/Layout"
+import Image from "next/image"
 
 export default function Resumen() {
 
@@ -16,8 +17,11 @@ export default function Resumen() {
                     {pedido.length === 0 ? (
                         <div className="block">
                             <p className="text-center text-lg text-red-600 font-bold uppercase mb-5">No hay elementos en tu pedido</p>
-                            <img
+                            <Image
                                 src='/assets/plato-vacio.png'
+                                alt="plato vacio"
+                                width={0}
+                                height={0}
                             />
                         </div> 
                     ) : (
