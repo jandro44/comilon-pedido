@@ -20,8 +20,8 @@ export default function Categoria2({categoria}) {
             <Image 
                 src={`/assets/img/icono_${icono}.svg`}
                 alt="Imagen Icono"
-                width={0}
-                height={0}
+                width={80}
+                height={80}
             />
             </div>
             <p

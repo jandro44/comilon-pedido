@@ -40,8 +40,8 @@ export default function Admin() {
                             <Image
                                 src='/assets/plato-vacio.png'
                                 alt='Plato vacio'
-                                width={0}
-                                height={0}
+                                width={400}
+                                height={400}
                             />
                         </div> 
                     </>

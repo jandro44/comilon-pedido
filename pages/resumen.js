@@ -20,8 +20,8 @@ export default function Resumen() {
                             <Image
                                 src='/assets/plato-vacio.png'
                                 alt="plato vacio"
-                                width={0}
-                                height={0}
+                                width={400}
+                                height={400}
                             />
                         </div> 
                     ) : (

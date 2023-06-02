@@ -19,8 +19,8 @@ const ResumenProducto = ({producto}) => {
                         src={`/assets/img/${producto.imagen}.jpg`}
                         alt={`Imagen platillo ${producto.nombre}`}
                         className="rounded-full w-20 h-20"
-                        width={0}
-                        height={0}
+                        width={80}
+                        height={80}
                     />
                 </div>
                 <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:shadow-md -mt-8"

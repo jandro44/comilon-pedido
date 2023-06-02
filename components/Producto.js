@@ -18,8 +18,8 @@ const Producto = ({producto}) => {
                 <Image 
                   src={`/assets/img/${imagen}.jpg`}
                   alt={`Imagen platillo ${nombre}`}
-                  width={0}
-                  height={0}
+                  width={80}
+                  height={80}
                   className="rounded-full w-20 h-20"
               />
 

@@ -29,8 +29,8 @@ export default function Ordenes({orden}) {
                     <Image 
                         src={`/assets/img/${platillo.imagen}.jpg`}
                         alt={`Imagen platillo ${platillo.nombre}`}
-                        width={0}
-                        height={0}
+                        width={80}
+                        height={80}
                         className="m-2 h-20 w-20 rounded-md border object-cover object-center"
                     />
                     <div className="flex w-full flex-col px-4 py-4">

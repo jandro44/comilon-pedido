@@ -46,8 +46,8 @@ const ModalProducto = () => {
                         src={`/assets/img/${producto.imagen}.jpg`}
                         alt={`Imagen platillo ${producto.nombre}`}
                         className="rounded-full w-20 h-20 mx-auto"
-                        width={0}
-                        height={0}
+                        width={80}
+                        height={80}
                     />
                     
                 </div>
