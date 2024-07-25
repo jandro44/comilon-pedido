@@ -1,10 +1,10 @@
-import { categorias } from "./data/categorias"; 
+import { categorias } from "./data/categorias";
 import { productos } from "./data/productos";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient()
 
-const main = async () : Promise<void> => {
+const main = async (): Promise<void> => {
     // esta funcion es de tipo Promise y no retorna nada
     try {
         // A la espera que se inserten todos los datos, createMany es para crear muchos datos, y data va si o si porque lo pide prisma
@@ -19,3 +19,11 @@ const main = async () : Promise<void> => {
     }
 }
 main()
+    .then(async () => {
+        await prisma.$disconnect()
+    })
+    .catch(async (e) => {
+        console.error(e);
+        await prisma.$disconnect()
+        process.exit(1)
+    })
